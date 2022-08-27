@@ -9,7 +9,7 @@ app.use( bodyParser.json() )
 
 const fontPath = path.join(__dirname, 'public','fonts', 'finalLibraryFont.ttf')
 app.use(express.static(fontPath))
-console.log("path.join(__dirname, 'public')", fontPath)
+// console.log("path.join(__dirname, 'public')", fontPath)
 
 
 app.get('/', (req,res) => res.send("server"))
